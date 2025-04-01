@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Biography</title>
+    <link rel="icon" href="assets/me.jpg" type="image/jpg">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <script src="backend/firebase.js" type="module"></script>
+    <script src="backend/firestore.js" type="module"></script>
+    <script src="backend/project.js" type="module"></script>
+    <script src="backend/achievement.js" type="module"></script>
+    <script src="backend/stack.js" type="module"></script>
+    <script src="backend/auth.js" type="module"></script>
+
+    <script src="script.js" type="module"></script>
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <nav>
+            <div class="nav-logo">
+                <img src="assets/me.jpg" alt="Logo">
+                <h1>Timotie John E. Punzalan</h1>
+            </div>
+            <button class="hamburger-menu" aria-label="Toggle navigation">
+                <i class="fa fa-bars"></i>
+            </button>
+            <div class="nav-container">
+                <ul class="nav-links">
+                    <li class="active"><a href="#about">About</a></li>
+                    <li><a href="#projects">Journey</a></li>
+                    
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>    
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="about-content">
+            <!-- Left Column -->
+            <div class="about-left">
+                <img src="assets/me.jpg" alt="Your Photo" class="about-photo">
+                <h2>Timotie John E. Punzalan</h2>
+                <h3>Bachelor of Science in Information Technology</h3>
+                <h4>Major in Animation and Motion Graphics</h4>
+                
+                
+            </div>                     
+
+            <!-- Right Column -->
+            <div class="about-right">
+                <p class="about-biopgraphy">Hello! My name is Timotie, and I am a passionate animator and motion graphics artist from Bay, Laguna. Currently, I am a 3rd-year student at Laguna State Polytechnic University, where I am honing my skills in Animation and Motion Graphics.
+
+                    Since childhood, I have been fascinated by the power of visual storytelling, which led me to pursue this creative journey. Through dedication and hard work, I have grown from an aspiring artist to a developing professional, eager to bring ideas to life through motion and design.
+                    
+                    Join me as I share my journey—from my early inspirations to my current projects and future aspirations in the world of animation.</span></p>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="section-heading">
+            <div class="heading-text">
+                <h2>My Journey </h2>
+                <p>My journey from childhood until now.</p>
+            </div>
+            
+        </div>
+        <div class="card-grid project">
+            <!-- Example of Project Card -->
+            <div class="card-item project">
+                <img src="assets/kid.jpg" alt="Project Image">
+                <div class="card-icons">
+                    <i class="fas fa-edit edit-icon" title="Edit Project"></i>
+                    <i class="fas fa-trash delete-icon" title="Delete Project"></i>
+                </div>
+                <h3>Kinder</h3>
+                <p class="project-description">This is me when i'm a kindergarden graduate, I graduate kinder at GCCS or Grace Christian Community School in Anos Makiling Subd. Los Baños Laguna</p>
+                
+                
+                
+            </div>
+            <div class="card-item project">
+                <img src="assets/grade4.jpg" alt="Project Image">
+                <div class="card-icons">
+                    <i class="fas fa-edit edit-icon" title="Edit Project"></i>
+                    <i class="fas fa-trash delete-icon" title="Delete Project"></i>
+                </div>
+                <h3>Elementary</h3>
+                <p class="project-description">Here, I'm an Elementary Student who always love to join the Field Trip in our school, We Have a tour at Baguio City in this Picture. And the Beautiful Woman here in the picture is my Mother, Anabelle Punzalan. I grew up close to my mother that's why she's always the person i love to go with.</p>
+                <p class="project-date">Made in Date Month Year</p>
+                
+                
+            </div>
+            <div class="card-item project">
+                <img src="assets/me.jpg" alt="Project Image">
+                <div class="card-icons">
+                    <i class="fas fa-edit edit-icon" title="Edit Project"></i>
+                    <i class="fas fa-trash delete-icon" title="Delete Project"></i>
+                </div>
+                <h3>Highschool</h3>
+                <p class="project-description">Here, I'm a senior Highschool Graduate in Trace College Laguna, the course i get is ICT. i loved this school because of their Beautifull layout of the rooms and especially the air conditioned rooms. </p>
+                
+                
+                
+            </div>
+            <div class="card-item project">
+                <img src="assets/drum.jpg" alt="Project Image">
+                <div class="card-icons">
+                    <i class="fas fa-edit edit-icon" title="Edit Project"></i>
+                    <i class="fas fa-trash delete-icon" title="Delete Project"></i>
+                </div>
+                <h3>Talent</h3>
+                <p class="project-description">Starting grade 4 until now i practiced drums because of the Talent that God gave me, In this Picture this me who loves to play drum even in outside band, I'm Also the church drummer where i learned to play drums.</p>
+                
+                
+                
+            </div>
+            <div class="card-item project">
+                <img src="assets/champ.jpg" alt="Project Image">
+                <div class="card-icons">
+                    <i class="fas fa-edit edit-icon" title="Edit Project"></i>
+                    <i class="fas fa-trash delete-icon" title="Delete Project"></i>
+                </div>
+                <h3>Battle of the Bands</h3>
+                <p class="project-description">I also join battle of the bands with my bandmates, we also gained more trophy and money. I love to compete in botb because i'm a proud musician who love to express the music talent to the people. In this picture we became the Champion and got a 10,000 pesos cash money prize annd celebrated.</p>
+                
+                
+                
+            </div>
+            <div class="card-item project">
+                <img src="assets/band.jpg" alt="Project Image">
+                <div class="card-icons">
+                    <i class="fas fa-edit edit-icon" title="Edit Project"></i>
+                    <i class="fas fa-trash delete-icon" title="Delete Project"></i>
+                </div>
+                <h3>Bandmates</h3>
+                <p class="project-description">This me and my bandmates, here is the picture i told you about the champion, we got Certifications also for joining their event and become their botb champion.</p>
+                
+                
+                
+            </div>
+            <div class="card-item project">
+                <img src="assets/ride.jpg" alt="Project Image">
+                <div class="card-icons">
+                    <i class="fas fa-edit edit-icon" title="Edit Project"></i>
+                    <i class="fas fa-trash delete-icon" title="Delete Project"></i>
+                </div>
+                <h3>Motorcycle Ride</h3>
+                <p class="project-description">I also have 2 Motorcycles, and i love to travel the world with my special person, we go to ride sometimes with our friends to enjoy the beauty of God created.</p>
+                
+                
+                
+            </div>
+
+            
+            <!-- Add Project -->
+            
+        </div>
+       
+
+        
+        
+    </section>
+
+    <!-- Achievements/Certifications Section -->
+    
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="section-heading">
+            <div class="heading-text">
+                <h2>Contact Me</h2>
+                <p>If you'd like to reach out, feel free to send me a message!</p>
+            </div>
+        </div>
+        <form id="contactForm">
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+            <input type="text" id="company" placeholder="Company Name (Optional)">
+            <select id="subject" name="subject" required>
+                <option value="" disabled selected>Subject</option>
+                <option value="job_opportunity">Job Opportunity</option>
+                <option value="interview_request">Interview Request</option>
+                <option value="freelance_work">Freelance Work</option>
+                <option value="networking">Networking</option>
+                <option value="resume_feedback">Resume Feedback</option>
+                <option value="project_inquiry">Project Inquiry</option>
+                <option value="collaboration">Collaboration</option>
+                <option value="general_question">General Question</option>
+                <option value="other">Other</option>
+            </select>
+            <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+            <button type="button" id="sendMessageBtn">Send Message</button>
+        </form>        
+    </section>
+
+    <!-- Modals -->
+    <div id="projectModal" class="modal">
+        <form id="projectForm" autocomplete="off" class="modal-content">
+            <h2>Edit Project</h2>
+            <input type="hidden" id="projectId" />
+            <input type="hidden" id="isEditMode" />
+            
+            <input type="text" id="projectTitle" placeholder="Project Title" autocomplete="off" />
+            
+            <textarea id="projectDescription" placeholder="Brief Description" autocomplete="off"></textarea>
+            
+            <input type="date" id="projectDate" autocomplete="off" />
+    
+            <input type="url" id="projectImage" placeholder="Image Link" autocomplete="off" />
+            
+            <input type="url" id="projectLink" placeholder="Project Link" autocomplete="off" />
+            
+            <input type="text" id="projectTech" placeholder="Technologies (comma-separated)" autocomplete="off" />
+    
+            <input type="number" id="projectPriority" placeholder="Priority (1-100)" min="1" max="100" autocomplete="off" />
+            
+            <button type="submit">Save</button>
+            <button type="button" class="cancel-btn project">Cancel</button>
+        </form>
+    </div>
+    <div id="achievementModal" class="modal">
+        <form id="achievementForm" autocomplete="off" class="modal-content">
+            <h2>Edit Achievement</h2>
+            <input type="hidden" id="achievementId" />
+            <input type="hidden" id="isEditMode" />
+    
+            <input type="text" id="achievementTitle" placeholder="Achievement Title" autocomplete="off" />
+    
+            <textarea id="achievementDescription" placeholder="Brief Description" autocomplete="off"></textarea>
+
+            <input type="date" id="achievementDate" autocomplete="off" />
+
+            <input type="url" id="achievementImage" placeholder="Image Link" autocomplete="off" />
+        
+            <input type="number" id="achievementPriority" placeholder="Priority (1-100)" min="1" max="100" autocomplete="off" />
+            
+            <button type="submit">Save</button>
+            <button type="button" class="cancel-btn achievement">Cancel</button>
+        </form>
+    </div>
+    <div id="experienceModal" class="modal">
+        <form id="experienceForm" autocomplete="off" class="modal-content">
+            <h2>Edit Experience</h2>
+            <input type="hidden" id="experienceId" />
+            <input type="hidden" id="isExperienceEditMode" />
+            
+            <input type="text" id="experienceSubTitle" placeholder="Company Name" autocomplete="off" />
+            <input type="text" id="experienceTitle" placeholder="Job Title" autocomplete="off" />
+            <input type="text" id="experienceYear" placeholder="Year (e.g., 2020 - 2022)" autocomplete="off" />
+            <textarea id="experienceDescription" placeholder="Brief Description" autocomplete="off"></textarea>
+            <input type="url" id="experienceImage" placeholder="Image Link (optional)" autocomplete="off" />
+
+            <button type="submit">Save</button>
+            <button type="button" class="cancel-btn experience">Cancel</button>
+        </form>
+    </div>
+    <div id="educationModal" class="modal">
+        <form id="educationForm" autocomplete="off" class="modal-content">
+            <h2>Edit Education</h2>
+            <input type="hidden" id="educationId" />
+            <input type="hidden" id="isEducationEditMode" />
+
+            <input type="text" id="educationSubTitle" placeholder="Institution Name" autocomplete="off" />
+            <input type="text" id="educationTitle" placeholder="Degree/Program" autocomplete="off" />
+            <input type="text" id="educationYear" placeholder="Year (e.g., 2016 - 2020)" autocomplete="off" />
+            <textarea id="educationDescription" placeholder="Brief Description" autocomplete="off"></textarea>
+            <input type="url" id="educationImage" placeholder="Image Link (optional)" autocomplete="off" />
+
+            <button type="submit">Save</button>
+            <button type="button" class="cancel-btn education">Cancel</button>
+        </form>
+    </div>      
+    <!-- Popups -->
+    <div class="image-popup">
+        <span class="close">&times;</span>
+        <img id="popupImage" src="" alt="Popup Image">
+      </div>
+    <footer>
+        <p>&copy; 2024 Punzalan Timotie John E. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
